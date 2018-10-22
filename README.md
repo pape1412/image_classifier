@@ -1,2 +1,2 @@
-# image_classifier
-Developing an command line tool for image classification.
+# Image Classifier
+Developing a command line tool for image classification.
