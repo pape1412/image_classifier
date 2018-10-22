@@ -12,7 +12,7 @@ Please be aware that model training can take a very long time. In the end, this 
 - hardware requirements
 - ...
 
-Also, please note that GPU training is only available if it's supported by your system. For refer to this [link](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#training-on-gpu) for more information. 
+Also, please note that GPU training is only available if it's supported by your system (you can follow this [link](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#training-on-gpu) for more information). 
 
 ## Files
 ```
