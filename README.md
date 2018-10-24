@@ -45,18 +45,25 @@ The basic usage for model training is:
 
 While the training of the model runs you should see a command line ouput showing training and validation loss as well as validation accuracy. Despite the basic execution you can tweak your model training by using the following options:
 - Set checkpoint directory:
+  
   ```$ python train.py data_dir --save_dir my_dir```
 - Set architechture:
+  
   ```$ python train.py data_dir --arch "vgg13"```
 - Set learning rate:
+  
   ```$ python train.py data_dir --learning_rate 0.01```
 - Set single layer hidden units:
+  
   ```$ python train.py data_dir --hidden_units 512```
 - Set multi layer hidden units:
+  
   ```$ python train.py data_dir --hidden_units [512,512]```
 - Set epochs:
+  
   ```$ python train.py data_dir --epochs 20```
 - Use GPU training:
+  
   ```$ python train.py data_dir --gpu```
 
 For more information on possible options and defaults please use: ```python train.py -h```
@@ -69,8 +76,10 @@ As soon as the prediction is done you will see an output of the predicted class 
   
   ```$ python predict.py /path/to/image model_checkpoint --tok_k 5```
 - Set mapping of classes to real names:
+  
   ```$ python predict.py /path/to/image model_checkpoint --category_names cat_to_name.json```
 - Use GPU for prediction:
+  
   ```$ python predict.py /path/to/image model_checkpoint --gpu```
 
 Should you want to use a mapping of classes to real names during prediction, this mapping should be provided within a ```.json``` file, e.g.:
