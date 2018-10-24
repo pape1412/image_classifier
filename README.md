@@ -66,6 +66,7 @@ The basic usage for image class prediction is:
 ```$ python predict.py /path/to/image model_checkpoint```
 As soon as the prediction is done you will see an output of the predicted class of the image as well as the class probability. Similar to model training, the prediction itself come with a couple of options for you to use:
 - Set number of top classes to return:
+  
   ```$ python predict.py /path/to/image model_checkpoint --tok_k 5```
 - Set mapping of classes to real names:
   ```$ python predict.py /path/to/image model_checkpoint --category_names cat_to_name.json```
