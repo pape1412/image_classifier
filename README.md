@@ -24,7 +24,7 @@ Both the ```model.py & utilities.py``` files are used to organize code in the ``
 
 ## Usage
 ### Data
-Before you can start to build you're own image classifier, you need to make sure that the data you're feeding to the model training comes in the correct format. You'll need to store two separate folders within one single directory - one for training, one for testing data. Inside each of these folders you need to have one additional folder with images for each class:
+Before you can start to build you're own image classifier, you need to make sure that the __data you're feeding to the model training comes in the correct format__. You'll need to store two separate folders within one single directory - one for training, one for testing data. Inside each of these folders you need to have one additional folder with images for each class:
 ```
 data_dir\
   train_dir\
@@ -40,49 +40,49 @@ data_dir\
       ...
 ```
 ### Training
-The basic usage for model training is:
+The __basic usage__ for model training is:
 ```$ python train.py data_dir```
 
-While the training of the model runs you should see a command line ouput showing training and validation loss as well as validation accuracy. Despite the basic execution you can tweak your model training by using the following options:
-- Set checkpoint directory:
+While the training of the model runs you should see a command line ouput showing training and validation loss as well as validation accuracy. Despite the basic execution you can __tweak your model training__ by using the following options:
+- Set __checkpoint directory__:
   
   ```$ python train.py data_dir --save_dir my_dir```
-- Set architechture:
+- Set __architechture__:
   
   ```$ python train.py data_dir --arch "vgg13"```
-- Set learning rate:
+- Set __learning rate__:
   
   ```$ python train.py data_dir --learning_rate 0.01```
-- Set single layer hidden units:
+- Set __single layer hidden units__:
   
   ```$ python train.py data_dir --hidden_units 512```
-- Set multi layer hidden units:
+- Set __multi layer hidden units__:
   
   ```$ python train.py data_dir --hidden_units [512,512]```
-- Set epochs:
+- Set __epochs__:
   
   ```$ python train.py data_dir --epochs 20```
-- Use GPU training:
+- Use __GPU training__:
   
   ```$ python train.py data_dir --gpu```
 
 For more information on possible options and defaults please use: ```python train.py -h```
 
 ### Prediction
-The basic usage for image class prediction is:
+The __basic usage__ for image class prediction is:
 ```$ python predict.py /path/to/image model_checkpoint```
-As soon as the prediction is done you will see an output of the predicted class of the image as well as the class probability. Similar to model training, the prediction itself come with a couple of options for you to use:
-- Set number of top classes to return:
+As soon as the prediction is done you will see an output of the predicted class of the image as well as the class probability. Similar to model training, the prediction itself come with a couple of __options__ for you to use:
+- Set __number of top classes__ to return:
   
   ```$ python predict.py /path/to/image model_checkpoint --tok_k 5```
-- Set mapping of classes to real names:
+- Set __mapping of classes to real names__:
   
   ```$ python predict.py /path/to/image model_checkpoint --category_names cat_to_name.json```
-- Use GPU for prediction:
+- Use __GPU for prediction__:
   
   ```$ python predict.py /path/to/image model_checkpoint --gpu```
 
-Should you want to use a mapping of classes to real names during prediction, this mapping should be provided within a ```.json``` file, e.g.:
+Should you want to use a __mapping of classes__ to real names during prediction, this mapping should be provided within a ```.json``` file, e.g.:
 ```
 {'1': 'name 1',
  '2': 'name 2',
