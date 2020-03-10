@@ -92,4 +92,4 @@ Should you want to use a __mapping of classes__ to real names during prediction,
 Again, for additional information on possible options and defaults use:  ```python predict.py -h```
 
 ## Acknowledgements
-This mini project was one of the projects I've worked on during my Data Scientist Nanodegree at [Udacity](https://eu.udacity.com). Also, I'd like to mention that this project would not have been possible without the extensive resources provided by the [PyTorch tutorials](https://pytorch.org/tutorials/).
+This mini project was one of the projects I've worked on during my Data Scientist Nanodegree programm at [Udacity](https://eu.udacity.com). Also, I'd like to mention that this project would not have been possible without the extensive resources provided by the [PyTorch tutorials](https://pytorch.org/tutorials/).
